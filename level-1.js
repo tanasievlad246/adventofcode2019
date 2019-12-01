@@ -112,17 +112,15 @@ function totalFuelForFuel (arr) { //calculates the total fuel required for each 
     for (let i = 0; i < arr.length; i++) {
         total += Math.floor(arr[i] / 3) - 2;
         let bool = true;
-        // let fuelOfFuel = 0;
-        let x = Math.floor(arr[i] / 3) - 2;
+        let current = Math.floor(arr[i] / 3) - 2; //current fuel needed for fuel...
         while (bool) {
-            x = Math.floor(x / 3) - 2;
+            current = Math.floor(x / 3) - 2;
             if (x <= 0) {
                 bool = false;
             } else {
                 total += x;
             }
         }
-        // total += fuelOfFuel
     }
     return total;
 }
