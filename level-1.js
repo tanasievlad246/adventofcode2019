@@ -127,5 +127,5 @@ function totalFuelForFuel (arr) { //calculates the total fuel required for each 
     return total;
 }
 
-console.log(totalFuel(arr));
-console.log(totalFuelForFuel(arr))
+console.log(totalFuel(arr)); //3279287
+console.log(totalFuelForFuel(arr)) //4916076
